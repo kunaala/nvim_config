@@ -12,11 +12,27 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'preservim/nerdtree'
 Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug '907th/vim-auto-save', 
+"python plugins
+"autocomplete 
+Plug 'zchee/deoplete-jedi'
+"status bar
+Plug 'vim-airline/vim-airline'
+"for pairing input quote and braces
+Plug 'jiangmiao/auto-pairs'
+"For easier commenting
+Plug 'scrooloose/nerdcommenter'
+"Code syntax check
+Plug 'neomake/neomake'
+"Code wrapping
+Plug 'tmhedberg/SimpylFold'
+"Format source code
+Plug 'sbdchd/neoformat'
 call plug#end()
-
 "let ayucolor="light"
 colorscheme codedark 
 map <silent> <C-n>  :NERDTreeFocus<CR>
+let g:auto_save = 1  " enable AutoSave on startup
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
 set encoding=utf-8
